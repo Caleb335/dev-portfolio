@@ -6,12 +6,138 @@
 }
 
 :root {
-    --primary-color: 
+    --primary-color: #66BD90;
+    --button-primary: #66BD90;
+    --button-outline-primary: #66BD90;
+    --text-primary: #ffffff;
 }
 
-#header {
+/* hero section starts here */
+#home {
     background-image:  linear-gradient(to bottom, rgba(0, 2, 3, 0.6), rgba(0, 1, 1, 0.6)), url(../assets/hero.png);
     height: 720px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--text-primary);
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    transition: all .8s ease-in;
+    cursor: pointer;
+}
+
+nav ul li:active {
+    color: var(--primary-color);
+}
+
+.fa-bars {
+    color: var(--text-primary);
+}
+
+nav span {
+    display: none;
+}
+
+.buttons {
+    margin-left: -3%;
+}
+
+.btn {
+    width: 180px;
+}
+
+.hero-intro {
+    color: var(--primary-color);
+    margin-top: 4%;
+}
+
+.hire-btn {
+    background: var(--primary-color);
+    color: var(--text-primary);
+}
+
+.resume-btn {
+    background: transparent;
+    border: 1px solid var(--button-outline-primary);
+    margin-left: 15px;
+    color: var(--primary-color);
+}
+
+.office img {
+    width: 300px;
+    height: 300px;
+    margin-left: 180%;
+    margin-top: -50%;
+}
+
+/* hero section ends here */
+
+/* about section starts here */
+
+
+
+
+@media only screen and (max-width: 576px) {
+    nav span {
+        display: block;
+        z-index: 5;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: var(--text-primary);
+        top: -4px;
+        left: 0;
+        color: var(--primary-color);
+        z-index: 3;
+    }
+
+    nav ul li a {
+        color: var(--primary-color);
+        margin-top: 55px;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        margin-left: -5%;
+        width: 100%;
+    }
+
+    .fa-bars {
+        color: var(--text-primary);
+        font-size: 30px;
+    }
+
+    .btn {
+        width: 200px;
+    }
+
+    .office img {
+        margin-top: -165%;
+        height: 180px;
+        width: 180px;
+        margin-left: 65%;
+        margin-bottom: 20%;
+    }
+
+    .hero-intro {
+        margin-top: 15%;
+    }
+
+    .dev {
+        margin-top: 22%;
+    }
 }

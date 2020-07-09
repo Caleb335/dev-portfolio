@@ -10,43 +10,80 @@
     <link rel="stylesheet" href="./styles/app.css">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
         <!-- all code goes here -->
-        <section id="header">
+        <section id="home">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/logo.png" alt="">
+                <nav class="navbar navbar-light navbar-expand-lg justify-content-between" id="navbar">
+                    <a href="" class="nav-brand">
+                        <img src="./assets/logo.png" alt="daniel's logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <span id="nav-toggle" onclick="toggle()">
+                        <i class="fa fa-bars"></i>
+                    </span>
+
+                    <ul class="nav-items" id="nav-items">
+                        <li>
+                            <a href="#" class="nav-link active">Home</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
+                        <li>
+                            <a href="#about" class="nav-link">About</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
+                        <li>
+                            <a href="#projects" class="nav-link">Projects</a>
                         </li>
-                      </ul>
+                        <li>
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="row py-5 hero-intro px-4">
+                    <div class="col col-md">
+                        <div class="col col-md-6 dev">
+                            <p class="row">HELLO THERE,</p>
+                            <h3 class="row mt-4">MY NAME IS DAVID FUCHS </h3>
+                            <p class="row">
+                                I am a website developer with over two years experience in bringing user centric designs to life pixel by pixel perfection I am constantly learning, engaging, networking and sharing my experience to help solve challanges
+                            </p>
+                            <div class="row ">
+                                <div class="col col-sm buttons">
+                                    <button type="button" class="btn col-sm-6 hire-btn">Hire Me Now</button>
+                                    <button type="button" class="btn col-sm-6 resume-btn">Download My CV</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col col-md office">
+                                <img src="./assets/circular.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                  </nav>
+                </div>
             </div>
         </section>
-        <!-- main content -->
-        
+        <!-- about section -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="row">About me <hr></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="./js/index.js"></script>
 </body>
 </html>
