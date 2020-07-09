@@ -39,10 +39,6 @@ nav ul li:active {
     color: var(--primary-color);
 }
 
-.fa-bars {
-    color: var(--text-primary);
-    z-index: 5;
-}
 
 nav span {
     display: none;
@@ -92,7 +88,11 @@ nav span {
 @media only screen and (max-width: 576px) {
     nav span {
         display: block;
-        z-index: 100;
+        z-index: 200;
+    }
+
+    .fa-bars {
+        color: var(--primary-color);       
     }
 
     nav ul {
@@ -129,7 +129,7 @@ nav span {
     }
 
     .office img {
-        margin-top: -188%;
+        margin-top: -200%;
         height: 180px;
         width: 180px;
         margin-left: 65%;
