@@ -92,7 +92,7 @@ nav span {
 @media only screen and (max-width: 576px) {
     nav span {
         display: block;
-        
+        z-index: 100;
     }
 
     nav ul {
@@ -129,7 +129,7 @@ nav span {
     }
 
     .office img {
-        margin-top: -165%;
+        margin-top: -188%;
         height: 180px;
         width: 180px;
         margin-left: 65%;
