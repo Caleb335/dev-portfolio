@@ -64,13 +64,6 @@ nav span {
     color: var(--text-primary);
 }
 
-.hire-btn:hover {
-    cursor: pointer;
-    background: transparent;
-    color: var(--primary-color);
-    transition: all ease-in .6s;
-}
-
 .resume-btn {
     background: transparent;
     border: 1px solid var(--button-outline-primary);
@@ -126,6 +119,55 @@ hr {
     border-width: 5px;
 }
 
+/* about section ends here */
+
+/* projects section starts here */
+#projects {
+    margin-top: 10%;
+}
+
+.project1 {
+    width: 350px;
+}
+ .project2 {
+     width: 375px;
+ }
+
+.project1 .project-title, 
+.project2 .project-title {
+    font-size: 30px;
+}
+
+.project1 .project-year,
+.project2 .project-year {
+    font-size: 26px;
+}
+
+.project-year span {
+    color: var(--primary-color);
+}
+
+.project-link a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.project-link a:hover {
+    cursor: pointer;
+}
+
+.year-contain {
+    margin-left: -9%;
+}
+
+.project-img {
+    width: 200px;
+}
+
+.project-img img {
+    width: 100%;
+}
 
 
 @media only screen and (max-width: 576px) {
@@ -172,10 +214,10 @@ hr {
     }
 
     .office img {
-        margin-top: -225%;
+        margin-top: -232%;
         height: 180px;
         width: 180px;
-        margin-left: 65%;
+        margin-left: 62%;
         margin-bottom: 20%;
     }
 
@@ -199,6 +241,13 @@ hr {
     }
 
     .about {
-        margin-top: 4%;
+        margin-top: 10%;
+    }
+
+    /* about section ends here */
+
+    /* project section starts here */
+    .project1 .project-year {
+        font-size: 18px;
     }
 }
