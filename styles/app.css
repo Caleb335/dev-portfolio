@@ -10,6 +10,8 @@
     --button-primary: #66BD90;
     --button-outline-primary: #66BD90;
     --text-primary: #ffffff;
+    --secondary-color: #13121C;
+    --tertiary-color: rgba(19, 18, 28, 0.88);
 }
 
 /* hero section starts here */
@@ -72,7 +74,7 @@ nav span {
 .office img {
     width: 300px;
     height: 300px;
-    margin-left: 180%;
+    margin-left: 160%;
     margin-top: -50%;
 }
 
@@ -83,6 +85,43 @@ nav span {
     margin-top: 10%;
 }
 
+.about-text {
+    margin-top: -95%;
+    border-width: 2px;
+    transform: rotate(-90deg);
+}
+
+.journey {
+    margin-top: -4%;
+    margin-left: -94%;
+}
+
+.journey p {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.career {
+    height: 300px;
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.about {
+    height: 300px;
+    background: var(--tertiary-color);
+    border-radius: 4px;
+}
+
+hr {
+    margin-left: -20px;
+    margin-top: -9px;
+    border-width: 5px;
+}
+
+.about-details {
+    padding-left: 5px;
+}
 
 
 @media only screen and (max-width: 576px) {
@@ -142,5 +181,16 @@ nav span {
 
     .dev {
         margin-top: 22%;
+    }
+
+    /* about section starts here */
+
+    .journey {
+        margin-top: -7%;
+        margin-left: -88%;
+    }
+
+    .journey p {
+        margin-top: -22%;
     }
 }
